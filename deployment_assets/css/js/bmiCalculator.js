@@ -6,6 +6,13 @@ const calculateMetricBMI = (weight, height) => {
     return result
 }
 
+const calculateImperialBMI = (weight, height) => {
+    let result
+    result = ((weight / (height * height)) * 703)
+
+    return result
+}
+
 const getBMIClassification = (value) => {
     if (value < 18.5) {
         return "Underweight"
